@@ -1,0 +1,14 @@
+/**unset*/
+body{
+  margin:0;
+}
+/**unset*/
+html{
+  background-color: rgb(236,238,244);
+}
+body
+{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 980px;
+}
