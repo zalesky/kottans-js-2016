@@ -1,17 +1,172 @@
 <!DOCTYPE html>
 <html lang=en>
-<head>
-  <meta charset=UTF-8>
-  <title>Document</title>
-  <link rel=stylesheet href=main.css>
-</head>
-<body>
-  <header>
-    <a href="" class=go-back role=button>go back</a>
-    <a href="" class=logo>
-    <img src= alt=logo>
-    </a>
-    <a href="" class=sign-in role=button>sign in</a>
-  </header>
-</body>
+  <head>
+    <meta charset=UTF-8>
+    <title>Order</title>
+    <link rel=stylesheet href=main.css>
+  </head>
+  <body>
+    <header>
+      <a href="" class=go-back role=button>go back</a>
+      <a href="" class=logo>
+        <img src=logo.png alt="logo">
+      </a>
+      <a href="" class=sign-in role=button>sign in</a>
+    </header>
+    <main>
+    <form action="#">
+      <section>
+        <h3>Your order</h3>
+        <table>
+          <tr>
+            <th>items</th>
+            <th>details</th>
+            <th>price</th>
+            <th>delivery</th>
+          </tr>
+          <tr>
+            <td>2 documents</td>
+            <td>2 languages</td>
+            <td><data value=USD:696.06>696.06</data></td>
+            <td>48 hours</td>
+          </tr>
+        </table>
+        <button>
+        place order
+        </button>
+        <button>
+        print a quote
+        </button>
+      </section>
+      <section>
+        <h3>help center</h3>
+        <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+        <address>
+          <a href="tel:+9710123123">+971(0)123 123</a>
+          <a href="mailto:help@qtest.com">help@qtest.com
+          </a>
+        </address>
+      </section>
+      <section>
+        <h1>Select what you want to translate</h1>
+        <label><input type="radio" name="typeDoc" value="">Website</label>
+        <label><input type="radio" name="typeDoc" value="">Documents</label>
+        <label><input type="radio" name="typeDoc" value="">Social Account</label>
+        <section>
+          <h2>Upload your documents <small>(Doc, Docx, Text, PDF, Markdown)</small></h2>
+          <label>Upload a new file<input type="file"></label>
+          <table>
+            <tr>
+              <th>file name</th>
+              <th>file size</th>
+              <th>number of words</th>
+              <th>remove</th>
+            </tr>
+            <tr>
+              <td>bussiness_operations.docx</td>
+              <td>781kb</td>
+              <td>843</td>
+              <td><a href="" role=button>del</a></td>
+            </tr>
+            <tr>
+              <td>bussiness_financial.docx</td>
+              <td>263kb</td>
+              <td>137</td>
+              <td><a href="" role=button>del</a></td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>Choose your languages pairings</h2>
+          <label>from
+            <select name=lngFrom>
+              <option value="1">English</option>
+              <option value="2">Ukrainian</option>
+              <option value="3">Malagacy</option>
+            </select>
+          </label>
+          <select name=lngTo>
+            <option value="1">Arabic</option>
+            <option value="2">Ukrainian</option>
+          </select>
+          <select name=lngTo>
+            <option value="1">Ukrainian</option>
+            <option value="2">English</option>
+          </select>
+          <a href="" role=button>del</a>
+          <a href="" role=button>+ADD</a>
+        </section>
+        <section>
+          <h2>Select your desired tone</h2>
+          <label><input type="radio" name="desired" value="1">Friendly/Casual</label>
+          <label><input type="radio" name="desired" value="2">Corporate/Pro</label>
+          <label><input type="radio" name="desired" value="3">Media/Formal</label>
+        </section>
+        <section>
+          <h2>Tell us how urgent this job is</h2>
+          <input type="range" min="0" max="2" step="1" value="1">
+          <span>i got time</span>
+          <span>average</span>
+          <span>yesterday</span>
+          <section>
+            <h2>timeline info</h2>
+            <p>With an AVERAGE timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
+          </section>
+        </section>
+        <section>
+          <h2>Sign up and choose a payment method</h2>
+          Already have an account with us? <a href=#>Sign in.</a>
+          <label>full name<input type="text"></label>
+          <label>email adress<input type="text"></label>
+          <label>choose a password<input type="text"></label>
+          <label><input type="radio" name="typePay" value="1">card</label>
+          <label><input type="radio" name="typePay" value="2">paypal</label>
+          <label><input type="radio" name="typePay" value="3">amazon</label>
+          <label>card number<input type="text"></label>
+          <label>expire date<input type="text" placeholder="DD / MM / YY"></label>
+          <label>code<input type="password"></label>
+        </section>
+        <label>
+          <input type="checkbox">
+          <small>I agree to the <a href="">Terms & Conditions</a></small>
+        </label>
+        <button>
+        place order
+        </button>
+        <button>
+        print a quote
+        </button>
+      </section>
+    </form>
+    </main>
+    <footer>
+      <section>
+        <h3>what we do</h3>
+        <p>We provide a full range of language services including content development, document, website and social media account accounts translation.</p>
+      </section>
+      <section>
+        <h3>our main office</h3>
+        <address>
+          <ul>
+            <li>Dubai, UAE</li>
+            <li>P.O. Box: 502735</li>
+            <li>Phone: +971(0)44278128</li>
+          </ul>
+        </address>
+      </section>
+      <section>
+        <h3>connect with us</h3>
+        <address>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Linkedin</li>
+          </ul>
+        </address>
+      </section>
+      <a href="" class=logo>
+        <img src=logo.png alt="logo">
+      </a>
+    </footer>
+  </body>
 </html>
