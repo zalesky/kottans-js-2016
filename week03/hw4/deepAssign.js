@@ -1,6 +1,6 @@
 /**
  * Clones sources into target.
- * Tests are here http://plnkr.co/edit/IWnKYUbTMDtYDvvC0hkd
+ * Tests are here http://plnkr.co/edit/WVsGnSuFJW2zfp4WRWjX
  * @param  {!Object} target    where we copy
  * @param  {!Object} sources   from here we copy methods and properties
  * @param  {Boolean} isExpand  this is an optional parameter. If true than extend objects.
