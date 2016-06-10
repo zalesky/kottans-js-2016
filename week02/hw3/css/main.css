@@ -3,7 +3,7 @@ body{
 	margin:0;
 }
 a{
-	all:unset; 
+	all:unset;
 }
 /**unset*/
 html{
@@ -21,7 +21,7 @@ header{
 	align-items: center;
 }
 button,a[role=button]{
-	padding: 1.1em 1.2em;
+	padding: 1em .5em 1em 3.2em;
 	cursor: pointer;
 	border: .15em solid #A5ABC5;
 	border-radius: .2em;
