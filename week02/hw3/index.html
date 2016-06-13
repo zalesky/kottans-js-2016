@@ -8,45 +8,45 @@
   </head>
   <body>
     <header>
-      <a href=# class="back pic" role=button>go back</a>
+      <a href=# class="back pic" role=button>GO BACK</a>
       <a href=# class=logo>
         <img src=img/logo.png alt="logo">
       </a>
-      <a href="" class="user pic" role=button>sign in</a>
+      <a href="" class="user pic" role=button>SIGN IN</a>
     </header>
     <main>
     <form action="#">
-      <section>
-        <h3 class="your-order pic">YOUR ORDER</h3>
-        <table>
-          <tr>
-            <th>items</th>
-            <th>details</th>
-            <th>price</th>
-            <th>delivery</th>
-          </tr>
-          <tr>
-            <td>2 documents</td>
-            <td>2 languages</td>
-            <td><data value=USD:696.06>696.06</data></td>
-            <td>48 hours</td>
-          </tr>
-        </table>
-        <button>
-        place order
-        </button>
-        <button class="print-quote">
-        print a quote
-        </button>
-      </section>
-      <section>
-        <h3>help center</h3>
-        <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
-        <address>
-          <a href="tel:+9710123123">+971(0)123 123</a>
-          <a href="mailto:help@qtest.com">help@qtest.com
-          </a>
-        </address>
+      <section class=order-header>
+        <section class=order>
+          <h3 class="your-order pic">YOUR ORDER</h3>
+          <table>
+            <tr>
+              <th>items</th>
+              <th>details</th>
+              <th>price</th>
+              <th>delivery</th>
+            </tr>
+            <tr>
+              <td>2 documents</td>
+              <td>2 languages</td>
+              <td><data value=USD:696.06>696.06</data></td>
+              <td>48 hours</td>
+            </tr>
+          </table>
+          <fieldset>
+            <button type=submit disabled>place order</button>
+            <button class="print-quote">print a quote</button>
+          </fieldset>  
+        </section>
+        <section class=help-center>
+            <h3>help center</h3>
+            <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
+            <address>
+              <a href="tel:+9710123123">+971(0)123 123</a>
+              <a href="mailto:help@qtest.com">help@qtest.com
+              </a>
+            </address>
+        </section>
       </section>
       <section>
         <h1>Select what you want to translate</h1>
@@ -131,7 +131,7 @@
           <input type="checkbox">
           <small>I agree to the <a href="">Terms & Conditions</a></small>
         </label>
-        <button>
+        <button type=submit disabled>
         place order
         </button>
         <button class="print-quote">

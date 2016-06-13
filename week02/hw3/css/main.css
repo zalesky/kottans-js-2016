@@ -2,8 +2,11 @@
 body{
 	margin:0;
 }
-a{
+a,fieldset{
 	all:unset;
+}
+fieldset{
+	display: block;
 }
 /**unset*/
 html{
@@ -21,10 +24,12 @@ header{
 	align-items: center;
 }
 button,a[role=button]{
-	padding: 1em .5em 1em 3.2em;
+	color: #A5ABC5;
+	font-weight: bold;
+	padding: 1em .5em 1em 1.9em;
 	cursor: pointer;
-	border: .15em solid #A5ABC5;
-	border-radius: .2em;
+	border: .1em solid #A5ABC5;
+	border-radius: .3em;
 }
 button:hover,a[role=button]:hover{
 	border-color: #76A7E1;
@@ -35,14 +40,27 @@ button:hover,a[role=button]:hover{
 	background: #5FCAC6;
 }
 main{
-	border: .15em solid #A5ABC5;
-	border-radius: .2em;
+	border: .1em solid #A5ABC5;
+	border-radius: .3em;
 	background: #FFF;
 }
 .your-order{
+	color: #515769;
 	background-repeat: no-repeat;
 	padding-left: 1.5em;
 }
 h3{
 	color: #6E768F;
+}
+.print-quote{
+	color: #FFF;
+}
+.order-header{
+	display: flex;
+}
+.order{
+flex:1 1 67%;
+}
+.help-center{
+flex:1 1 33%;
 }
