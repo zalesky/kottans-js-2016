@@ -2,11 +2,8 @@
 body{
 	margin:0;
 }
-a,fieldset{
+a{
 	all:unset;
-}
-fieldset{
-	display: block;
 }
 /**unset*/
 html{
@@ -16,6 +13,7 @@ body
 {
 	margin: 0 auto;
   max-width: 980px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 header{
 	margin: 20px auto;
@@ -24,12 +22,11 @@ header{
 	align-items: center;
 }
 button,a[role=button]{
-	color: #A5ABC5;
-	font-weight: bold;
-	padding: 1em .5em 1em 1.9em;
+	border-radius: .2em;
+	border: .15em solid #A5ABC5;
 	cursor: pointer;
-	border: .1em solid #A5ABC5;
-	border-radius: .3em;
+	font-weight: 700;
+	padding: 1em .5em 1em 3.2em;
 }
 button:hover,a[role=button]:hover{
 	border-color: #76A7E1;
@@ -40,27 +37,14 @@ button:hover,a[role=button]:hover{
 	background: #5FCAC6;
 }
 main{
-	border: .1em solid #A5ABC5;
-	border-radius: .3em;
+	border: .15em solid #A5ABC5;
+	border-radius: .2em;
 	background: #FFF;
 }
 .your-order{
-	color: #515769;
 	background-repeat: no-repeat;
 	padding-left: 1.5em;
 }
 h3{
 	color: #6E768F;
-}
-.print-quote{
-	color: #FFF;
-}
-.order-header{
-	display: flex;
-}
-.order{
-flex:1 1 67%;
-}
-.help-center{
-flex:1 1 33%;
 }
