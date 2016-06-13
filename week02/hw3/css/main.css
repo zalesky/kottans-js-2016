@@ -1,8 +1,9 @@
 /**unset*/
 body{
 	margin:0;
+	padding: 0;
 }
-a{
+a, address{
 	all:unset;
 }
 /**unset*/
@@ -12,6 +13,7 @@ html{
 body
 {
 	margin: 0 auto;
+	color: #A5ABC5;
   max-width: 980px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -23,28 +25,104 @@ header{
 }
 button,a[role=button]{
 	border-radius: .2em;
-	border: .15em solid #A5ABC5;
+	border: 1px solid #A5ABC5;
 	cursor: pointer;
 	font-weight: 700;
-	padding: 1em .5em 1em 3.2em;
+	padding: 1em 2em;
+}
+a[role=button]{
+	padding-left: 3em;
 }
 button:hover,a[role=button]:hover{
 	border-color: #76A7E1;
 	opacity: .9;
 }
 
-.print-quote{
-	background: #5FCAC6;
+.place-order{
+	background: #5fcac6;
+	color: #fff;
 }
 main{
-	border: .15em solid #A5ABC5;
+	border: 1px solid #A5ABC5;
 	border-radius: .2em;
 	background: #FFF;
 }
-.your-order{
-	background-repeat: no-repeat;
-	padding-left: 1.5em;
-}
+
 h3{
 	color: #6E768F;
 }
+.order-header{
+	display: flex;
+}
+.table-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.table-wrapper h3{
+	margin-left: -50px;
+}
+.table-wrapper table{
+	text-align: left;
+}
+.table-wrapper td,th{
+	padding: 6px;
+}
+.order{
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	border-right: 2px solid #a5abc5;
+}
+.your-order{
+	background-repeat: no-repeat;
+	padding-left: 3em;
+}
+.order-buttons{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.help-center{
+	max-width: 310px;
+	padding-left: 50px;
+	margin-bottom: 20px;
+}
+.help.pic{
+	margin-left: -56px;
+  padding-left: 56px;
+}
+.help-center a{
+	padding: 10px;
+	font-weight: 700;
+}
+.main-form{
+	border-top: 2px solid #a5abc5;
+}
+.main-form h1{
+	margin: 105px auto 70px;
+	border-bottom: 1px solid #a5abc5;
+	width: 55%;
+	text-align: center;
+}
+.typedoc{
+	display: flex;
+	justify-content: space-around;
+}
+.myradio{
+	width: 260px;
+	height: 260px;
+	cursor: pointer;
+	border: 1px solid #A5ABC5;
+	text-align: center;
+	vertical-align: bottom;
+	border-radius: .3em;
+
+}
+.myradio span{
+	line-height: 460px;
+	font-weight: 700;
+}
+input[type=radio]:checked+label{
+	border: 6px solid #6a9fde;
+}
+	

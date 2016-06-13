@@ -19,28 +19,31 @@
     <form action="#">
       <section class=order-header>
         <section class=order>
-          <h3 class="your-order pic">YOUR ORDER</h3>
-          <table>
-            <tr>
-              <th>items</th>
-              <th>details</th>
-              <th>price</th>
-              <th>delivery</th>
-            </tr>
-            <tr>
-              <td>2 documents</td>
-              <td>2 languages</td>
-              <td><data value=USD:696.06>696.06</data></td>
-              <td>48 hours</td>
-            </tr>
-          </table>
-          <fieldset>
-            <button type=submit disabled>place order</button>
-            <button class="print-quote">print a quote</button>
-          </fieldset>  
+          <div class="table-wrapper">
+            <h3 class="your-order pic">YOUR ORDER</h3>
+            <table>
+              <tr>
+                <th>ITEMS</th>
+                <th>DETAILS</th>
+                <th>PRICE</th>
+                <th>DELIVERY</th>
+              </tr>
+              <tr>
+                <td>2 documents</td>
+                <td>2 languages</td>
+                <td><data value=USD:696.06>696.06</data></td>
+                <td>48 hours</td>
+              </tr>
+            </table>
+            </div> 
+            <div class=order-buttons>
+              <button type=submit class=place-order disabled>PLACE ORDER</button>
+              <button class=print-quote>PRINT A QUOTE</button>
+            </div>
+          
         </section>
         <section class=help-center>
-            <h3>help center</h3>
+            <h3 class="help pic">HELP CENTER</h3>
             <p>If you need assistance while placing your order, contact one of our beloved Project Manager by phone or email.</p>
             <address>
               <a href="tel:+9710123123">+971(0)123 123</a>
@@ -49,11 +52,16 @@
             </address>
         </section>
       </section>
-      <section>
-        <h1>Select what you want to translate</h1>
-        <label><input type="radio" name="typeDoc" value="">Website</label>
-        <label><input type="radio" name="typeDoc" value="">Documents</label>
-        <label><input type="radio" name="typeDoc" value="">Social Account</label>
+      <section class=main-form>
+        <h1>SELECT WHAT YOU WANT TO TRANSLATE</h1>
+        <section class=typedoc>
+          <input type=radio name=typeDoc value=1 hidden id=radio1>
+          <label class="myradio site" for=radio1><span>Website</span></label>
+          <input type=radio name=typeDoc value=2 hidden id=radio2>
+          <label class="myradio doc" for=radio2><span>Documents</span></label>
+          <input type=radio name=typeDoc value=3 hidden id=radio3>
+          <label class="myradio social" for=radio3><span>Social Account</span></label>
+        </section>
         <section>
           <h2>Upload your documents <small>(Doc, Docx, Text, PDF, Markdown)</small></h2>
           <label>Upload a new file<input type="file"></label>
@@ -107,9 +115,9 @@
         <section>
           <h2>Tell us how urgent this job is</h2>
           <input type="range" min="0" max="2" step="1" value="1">
-          <span>i got time</span>
-          <span>average</span>
-          <span>yesterday</span>
+          <span>I GOT TIME</span>
+          <span>AVERAGE</span>
+          <span>YESTERDAY</span>
           <section>
             <h2>timeline info</h2>
             <p>With an AVERAGE timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
@@ -132,12 +140,10 @@
           <input type="checkbox">
           <small>I agree to the <a href="">Terms & Conditions</a></small>
         </label>
-        <button type=submit disabled>
-        place order
-        </button>
-        <button class="print-quote">
-        print a quote
-        </button>
+        <div class=order-buttons>
+          <button type=submit class=place-order disabled>PLACE ORDER</button>
+          <button class=print-quote>PRINT A QUOTE</button>
+        </div>  
       </section>
     </form>
     </main>
