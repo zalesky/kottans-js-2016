@@ -13,6 +13,7 @@ body
 {
 	margin: 0 auto;
   max-width: 980px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 header{
 	margin: 20px auto;
@@ -21,10 +22,11 @@ header{
 	align-items: center;
 }
 button,a[role=button]{
-	padding: 1em .5em 1em 3.2em;
-	cursor: pointer;
-	border: .15em solid #A5ABC5;
 	border-radius: .2em;
+	border: .15em solid #A5ABC5;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1em .5em 1em 3.2em;
 }
 button:hover,a[role=button]:hover{
 	border-color: #76A7E1;
