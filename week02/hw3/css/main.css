@@ -110,7 +110,7 @@ h3{
 }
 .myradio{
 	width: 260px;
-	height: 260px;
+	height: 240px;
 	cursor: pointer;
 	border: 1px solid #A5ABC5;
 	text-align: center;
@@ -119,10 +119,32 @@ h3{
 
 }
 .myradio span{
-	line-height: 460px;
+	line-height: 435px;
 	font-weight: 700;
 }
 input[type=radio]:checked+label{
 	border: 6px solid #6a9fde;
 }
-	
+.steps{
+
+}
+.first h2:before{
+	content: '①';
+}
+.second h2:before{
+	content: '②';
+}
+.third h2:before{
+	content: '③';
+}
+.fourth>h2:before{
+	content: '④';
+}
+.fifth h2:before{
+	content: '⑤';
+}
+
+
+
+
+
