@@ -60,33 +60,33 @@
           <label class="myradio doc" for=radio2><span>Documents</span></label>
           <input type=radio name=typeDoc value=3 hidden id=radio3>
           <label class="myradio social" for=radio3><span>Social Account</span></label>
-        </section>
-        <section class="steps first">
-          <h2>Upload your documents <small>(Doc, Docx, Text, PDF, Markdown)</small></h2>
-          <label>Upload a new file<input type="file"></label>
-          <table>
-            <tr>
-              <th>file name</th>
-              <th>file size</th>
-              <th>number of words</th>
-              <th>remove</th>
-            </tr>
-            <tr>
-              <td>bussiness_operations.docx</td>
-              <td>781kb</td>
-              <td>843</td>
-              <td><a href="" role=button class="delete">del</a></td>
-            </tr>
-            <tr>
-              <td>bussiness_financial.docx</td>
-              <td>263kb</td>
-              <td>137</td>
-              <td><a href="" role=button class="delete">del</a></td>
-            </tr>
-          </table>
-        </section>
-        <section class="steps second">
-          <h2>Choose your languages pairings</h2>
+          <section class="steps upload-documents">
+            <h2 class=first>Upload your documents <small>(Doc, Docx, Text, PDF, Markdown)</small></h2>
+            <label class="upload pic" role=button>Upload a new file<input type=file hidden></label>
+            <table class=table-doc>
+              <tr>
+                <th>FILE NAME</th>
+                <th>FILE SIZE</th>
+                <th>NUMBER OF WORDS</th>
+                <th>REMOVE</th>
+              </tr>
+              <tr>
+                <td><h4 class="doc-text pic">bussiness_operations.docx</h4></td>
+                <td>781kb</td>
+                <td>843</td>
+                <td><a href="" class="trash">&nbsp;</a></td>
+              </tr>
+              <tr>
+                <td><h4 class="doc-text pic">bussiness_financial.docx</h4></td>
+                <td>263kb</td>
+                <td>137</td>
+                <td><a href="" class="trash">&nbsp;</a></td>
+              </tr>
+            </table>
+          </section>
+          </section>
+        <section class="steps">
+          <h2 class=second>Choose your languages pairings</h2>
           <label>from
             <select name=lngFrom>
               <option value="1">English</option>
@@ -102,35 +102,53 @@
             <option value="1">Ukrainian</option>
             <option value="2">English</option>
           </select>
-          <a href="" role=button class="delete">del</a>
-          <a href="" role=button class="add">+ADD</a>
+          <a href="" class="trash">&nbsp;</a>
+          <a href="" role=button class=add>+ADD</a>
         </section>
-        <section class="steps third">
-          <h2>Select your desired tone</h2>
-          <label><input type="radio" name="desired" value="1">Friendly/Casual</label>
-          <label><input type="radio" name="desired" value="2">Corporate/Pro</label>
-          <label><input type="radio" name="desired" value="3">Media/Formal</label>
+        <div class=wrapper>  
+        <section class="steps tone">
+          <h2 class=third>Select your desired tone</h2>
+          <input type=radio name=desired value=1 hidden id=radio5>
+          <label for=radio5 class="myradio chat pic">Friendly/Casual</label>
+          <input type=radio name=desired value=2 hidden id=radio6>
+          <label for=radio6 class="myradio chat pic">Corporate/Pro</label>
+          <input type=radio name=desired value=3 hidden id=radio7>
+          <label for=radio7 class="myradio chat pic">Media/Formal</label>
         </section>
-        <section class="steps fourth">
-          <h2>Tell us how urgent this job is</h2>
-          <input type="range" min="0" max="2" step="1" value="1">
-          <span>I GOT TIME</span>
-          <span>AVERAGE</span>
-          <span>YESTERDAY</span>
-          <section>
-            <h2>timeline info</h2>
+        
+        
+        <section class="steps">
+          <h2 class=fourth>Tell us how urgent this job is</h2>
+          <div class=range>
+            <input type="range" min="0" max="2" step="1" value="1">
+            <div class="range-text">
+              <span>I GOT TIME</span>
+              <span>AVERAGE</span>
+              <span>YESTERDAY</span>
+            </div>
+          </div>
+          <section class=timeline-info>
+            <h3 class="info pic">TIMELINE INFO</h3>
             <p>With an AVERAGE timeline set up, our expert translator can take a reasonable amount of time perfecting your translation</p>
           </section>
         </section>
-        <section class="steps fifth">
-          <h2>Sign up and choose a payment method</h2>
-          Already have an account with us? <a href=#>Sign in.</a>
-          <label>full name<input type="text"></label>
-          <label>email adress<input type="text"></label>
-          <label>choose a password<input type="text"></label>
-          <label><input type="radio" name="typePay" value="1">card</label>
-          <label><input type="radio" name="typePay" value="2">paypal</label>
-          <label><input type="radio" name="typePay" value="3">amazon</label>
+        </div>
+        <section class="steps payment">
+          <h2 class=fifth>Sign up and choose a payment method</h2>
+          <p>
+            Already have an account with us? <a href=#>Sign in.</a>
+          </p>
+          <label class=full-name>full name<input type="text" placeholder="Sean Connery"></label>
+          <label>email adress<input type="text" placeholder="sean.connery@lviv.ua"></label>
+          <label>choose a password<input type="password"></label>
+          <div class="payment-method">
+            <input type=radio name=typePay value=1 hidden id=radio8>
+            <label for=radio8 class="myradio visa">card</label>
+            <input type=radio name=typePay value=2 hidden id=radio9>
+            <label for=radio9 class="myradio visa">paypal</label>
+            <input type=radio name=typePay value=3 hidden id=radio10>
+            <label for=radio10 class="myradio visa">amazon</label>
+          </div>
           <label>card number<input type="text"></label>
           <label>expire date<input type="text" placeholder="DD / MM / YY"></label>
           <label>code<input type="password"></label>
