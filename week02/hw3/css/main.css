@@ -113,6 +113,7 @@ h3{
 	height: 260px;
 	cursor: pointer;
 	border: 1px solid #A5ABC5;
+	margin: 5px;
 	text-align: center;
 	vertical-align: bottom;
 	border-radius: .3em;
@@ -124,5 +125,6 @@ h3{
 }
 input[type=radio]:checked+label{
 	border: 6px solid #6a9fde;
+	margin: 0px;
 }
 	
