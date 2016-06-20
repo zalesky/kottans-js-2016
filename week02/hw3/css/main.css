@@ -14,16 +14,16 @@ html {
   background-color: rgb(236, 238, 244);
 }
 body {
-  margin: 0 auto;
   color: #A5ABC5;
-  max-width: 980px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 header {
-  margin: 20px auto;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 20px auto;
+  max-width: 980px;
+  margin: 0 auto;
 }
 button, a[role=button], label[role=button] {
   border-radius: .2em;
@@ -38,15 +38,17 @@ a[role=button], label[role=button] {
 button:hover, a[role=button]:hover, label[role=button]:hover {
   border-color: #76A7E1;
   opacity: .9;
-}
-.place-order {
+}  .place-order {
+
   background: #5fcac6;
   color: #fff;
 }
 main {
-  border: 1px solid #A5ABC5;
-  border-radius: .2em;
   background: #FFF;
+  border-radius: .2em;
+  border: 1px solid #A5ABC5;
+  margin: 0 auto 100px;
+  max-width: 980px;
 }
 h3 {
   color: #6E768F;
@@ -72,10 +74,10 @@ small {
   padding: 6px;
 }
 .order {
+  border-right: 2px solid #a5abc5;
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-  border-right: 2px solid #a5abc5;
 }
 .your-order {
   background-repeat: no-repeat;
@@ -103,10 +105,10 @@ small {
   border-top: 2px solid #a5abc5;
 }
 .main-form h1 {
-  margin: 105px auto 70px;
   border-bottom: 1px solid #a5abc5;
-  width: 55%;
+  margin: 105px auto 70px;
   text-align: center;
+  width: 55%;
 }
 .typedoc {
   display: flex;
@@ -114,13 +116,13 @@ small {
   flex-wrap: wrap;
 }
 .myradio {
-  width: 260px;
-  cursor: pointer;
+  border-radius: .3em;
   border: 1px solid #A5ABC5;
-  margin: 5px;
+  cursor: pointer;
+  margin: 5px 10px 5px 0;
   text-align: center;
   vertical-align: bottom;
-  border-radius: .3em;
+  width: 260px;
 }
 .typedoc .myradio {
   height: 240px;
@@ -192,11 +194,11 @@ input[type=radio]:checked+label:after {
   justify-content: space-between;
 }
 .timeline-info {
+  border-radius: .2em;
+  border: 1px solid #A5ABC5;
+  margin-top: 15px;
   max-width: 300px;
   padding: 0 40px;
-  margin-top: 15px;
-  border: 1px solid #A5ABC5;
-  border-radius: .2em;
 }
 .range input {
   display: block;
@@ -222,11 +224,123 @@ input[type=radio]:checked+label:after {
   height: 39px;
   line-height: 39px;
 }
+.payment-method .myradio {
+  display: inline-block;
+  height: 88px;
+  line-height: 39px;
+}
+.select-custom:after {
+  border-left: 1px solid #a5abc5;
+  content: '▼';
+  height: 100%;
+  line-height: 56px;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 40px;
+}
+.select-custom {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+select {
+  font-weight: 700;
+  color: #a5abc5;
+  -webkit-appearance: none;
+  border-radius: .2em;
+  padding: 19px;
+  width: 133px;
+}
+.from {
+  display: block;
+  margin-bottom: 15px;
+}
+.translate-to label {
+  display: inline-block;
+  text-align: right;
+  width: 40px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+}
+input[type=range]:before, input[type=range]:after {
+  content: '●';
+  font-size: 21px;
+  line-height: 14px;
+  position: relative;
+}
+input[type=range]:before {
+  left: 11px;
+}
+input[type=range]:after {
+  right: 11px;
+}
+input[type=range]:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: goldenrod;
+  border-radius: 50%;
+  border: none;
+  height: 16px;
+  margin-top: -4px;
+  width: 16px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: #eff0f5;
+  height: 8px;
+}
+input[type=text], input[type=password] {
+  height: 39px;
+  line-height: 39px;
+}
+.over {
+  display: inline-block;
+  width: 14.5em;
+  margin-right: .5em;
+  padding-top: 1.5em;
+}
+.under {
+  display: inline-block;
+  width: 15em;
+  position: relative;
+  top: 1em;
+}
 .full-name {
   display: block;
 }
-.payment-method .myradio {
-  height: 88px;
-  line-height: 39px;
-  display: inline-block;
+.payment-method {
+  margin: 40px 0;
+}
+.fot {
+  margin: 50px;
+  width: 600px;
+  flex-direction: row;
+  line-height: 40px;
+  text-align: right;
+}
+footer {
+  background-color: #444a62;
+  display: flex;
+  justify-content: space-around;
+}
+.what-we {
+  width: 200px;
+}
+footer img {
+  margin: 30px;
+}
+footer li {
+  list-style: none;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+footer h3 {
+  padding-left: 30px;
+  padding-top: 15px;
 }

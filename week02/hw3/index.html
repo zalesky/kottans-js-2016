@@ -85,23 +85,30 @@
             </table>
           </section>
           </section>
-        <section class="steps">
+        <section class="steps translate-to">
           <h2 class=second>Choose your languages pairings</h2>
-          <label>from
-            <select name=lngFrom>
-              <option value="1">English</option>
+          <label>FROM</label>
+            <div class=select-custom>
+              <select name=lngFrom>
+                <option value="1">English</option>
+                <option value="2">Ukrainian</option>
+                <option value="3">Malagacy</option>
+              </select>
+            </div>
+            <div></div>
+          <label>TO</label> 
+          <div class=select-custom>
+            <select name=lngTo>
+              <option value="1">Arabic</option>
               <option value="2">Ukrainian</option>
-              <option value="3">Malagacy</option>
             </select>
-          </label>
-          <select name=lngTo>
-            <option value="1">Arabic</option>
-            <option value="2">Ukrainian</option>
-          </select>
-          <select name=lngTo>
-            <option value="1">Ukrainian</option>
-            <option value="2">English</option>
-          </select>
+          </div>
+          <div class=select-custom>
+            <select name=lngTo>
+              <option value="1">Ukrainian</option>
+              <option value="2">English</option>
+            </select>
+          </div>
           <a href="" class="trash">&nbsp;</a>
           <a href="" role=button class=add>+ADD</a>
         </section>
@@ -138,9 +145,12 @@
           <p>
             Already have an account with us? <a href=#>Sign in.</a>
           </p>
-          <label class=full-name>full name<input type="text" placeholder="Sean Connery"></label>
-          <label>email adress<input type="text" placeholder="sean.connery@lviv.ua"></label>
-          <label>choose a password<input type="password"></label>
+          <label class="full-name over">FULL NAME
+            <input class=under type="text" placeholder="Sean Connery"></label>
+          <label class=over>EMAIL ADRESS
+            <input class=under type="text" placeholder="sean.connery@lviv.ua"></label>
+          <label class=over>CHOOSE A PASSWORD
+            <input class=under type="password"></label>
           <div class="payment-method">
             <input type=radio name=typePay value=1 hidden id=radio8>
             <label for=radio8 class="myradio visa">card</label>
@@ -149,15 +159,15 @@
             <input type=radio name=typePay value=3 hidden id=radio10>
             <label for=radio10 class="myradio visa">amazon</label>
           </div>
-          <label>card number<input type="text"></label>
-          <label>expire date<input type="text" placeholder="DD / MM / YY"></label>
-          <label>code<input type="password"></label>
+          <label class=over>card number<input class=under type="text"></label>
+          <label class=over>expire date<input class=under type="text" placeholder="DD / MM / YY"></label>
+          <label class=over>code<input class=under type="password"></label>
         </section>
-        <label>
-          <input type="checkbox">
-          <small>I agree to the <a href="">Terms & Conditions</a></small>
-        </label>
-        <div class=order-buttons>
+        <div class="order-buttons fot">
+          <label>
+            <input type="checkbox">
+            <small>I agree to the <a href="">Terms & Conditions</a></small>
+          </label>
           <button type=submit class=place-order disabled>PLACE ORDER</button>
           <button class=print-quote>PRINT A QUOTE</button>
         </div>
@@ -165,12 +175,12 @@
     </form>
     </main>
     <footer>
-      <section>
-        <h3>what we do</h3>
+      <section class=what-we>
+        <h3 class=heart>WHAT WE DO</h3>
         <p>We provide a full range of language services including content development, document, website and social media account accounts translation.</p>
       </section>
       <section>
-        <h3>our main office</h3>
+        <h3 class=compass>OUR MAIN OFFICE</h3>
         <address>
           <ul>
             <li>Dubai, UAE</li>
@@ -180,12 +190,12 @@
         </address>
       </section>
       <section>
-        <h3>connect with us</h3>
+        <h3 class=share>CONNECT WITH US</h3>
         <address>
           <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Linkedin</li>
+            <li class="facebook">Facebook</li>
+            <li class="twitter">Twitter</li>
+            <li class="linkedin">Linkedin</li>
           </ul>
         </address>
       </section>
