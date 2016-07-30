@@ -1,0 +1,15 @@
+{
+  "name": "Homework",
+  "version": "1.0.0",
+  "description": "Homework 6",
+  "main": "main.js",
+  "author": "Zaleskyy",
+  "license": "MIT",
+  "scripts": {
+    "start": "node config/nodemon-config"
+  },
+  "devDependencies": {
+    "config": "^1.21.0",
+    "nodemon": "^1.9.2"
+  }
+}
